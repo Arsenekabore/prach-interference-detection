@@ -1,0 +1,15 @@
+feature,gain
+own_peak1,0.02715328
+own_peak2,0.108608045
+own_peak3,0.055453233
+own_peak2_over_peak1,0.09181602
+own_mean_over_median,0.031081121
+own_p95_over_median,0.011047605
+own_n_windows_gt8,0.11441955
+own_n_windows_gt16,0.08206783
+nb_peak_max,0.09421233
+nb_psr_max,0.25776005
+nb_peak_over_own_peak,0.061799396
+nb_mean_over_own_median,0.015704812
+energy_over_own_floor,0.030409928
+own_kurtosis,0.018466834

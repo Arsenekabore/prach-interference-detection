@@ -1,0 +1,91 @@
+{
+  "experiment": {
+    "n_runs": 10,
+    "snr_db": [
+      -18,
+      -15,
+      -12,
+      -9,
+      -6,
+      -3,
+      0,
+      5,
+      10
+    ],
+    "isr_db": [
+      -9,
+      -6,
+      -3,
+      0,
+      3
+    ],
+    "n_train_cell": 150,
+    "n_val_cell": 40,
+    "n_test_cell": 60,
+    "n_rob_cell": 30,
+    "epochs": 60,
+    "batch": 64,
+    "lr": 0.001,
+    "patience": 8,
+    "models": [
+      "Correlation",
+      "XGBoost",
+      "CNN",
+      "Conv1D",
+      "LSTM",
+      "Transformer",
+      "Conv1D-IQ"
+    ],
+    "out_dir": "/content/drive/MyDrive/prach_revision/results"
+  },
+  "simulator": {
+    "u0": 129,
+    "neighbour_roots": [
+      300,
+      501,
+      688
+    ],
+    "unseen_roots": [
+      77,
+      412,
+      777
+    ],
+    "profile": "ETU",
+    "doppler_hz": 70.0,
+    "n_rx": 2,
+    "n_sin": 16,
+    "cfo_desired_hz": 270.0,
+    "cfo_interf_max_hz": 270.0,
+    "ta_max_us": 14.0,
+    "inter_delay_max_us": 40.0
+  },
+  "hardware": {
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "python": "3.13.16",
+    "tensorflow": "2.21.0",
+    "gpus": [
+      "/physical_device:GPU:0"
+    ],
+    "gpu_details": [
+      {
+        "compute_capability": [
+          7,
+          5
+        ],
+        "device_name": "Tesla T4"
+      }
+    ],
+    "xgboost": "3.4.1",
+    "ram_gb": 12.7,
+    "cpu_count": 2
+  },
+  "numerology": {
+    "L_RA": 839,
+    "SCS": 1250.0,
+    "N_FFT": 1024,
+    "FS": 1280000.0,
+    "N_CP": 132,
+    "N_CS": 26
+  }
+}
